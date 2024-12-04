@@ -8142,6 +8142,7 @@ GameObject:
   - component: {fileID: 718439708}
   - component: {fileID: 718439707}
   - component: {fileID: 718439706}
+  - component: {fileID: 718439714}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -8216,6 +8217,7 @@ MonoBehaviour:
   jumpInput: 32
   strafeInput: 9
   sprintInput: 304
+  myslashInput: 323
   rotateCameraXInput: Mouse X
   rotateCameraYInput: Mouse Y
   cc: {fileID: 0}
@@ -8310,6 +8312,18 @@ Transform:
   - {fileID: 652254991}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &718439714
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 718439705}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31febb2f52064bb4f81dab8a1dd95374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &719421452
 GameObject:
   m_ObjectHideFlags: 0

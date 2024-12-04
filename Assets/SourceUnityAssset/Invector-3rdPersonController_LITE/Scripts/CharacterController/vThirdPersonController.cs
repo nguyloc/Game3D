@@ -4,9 +4,19 @@ namespace Invector.vCharacterController
 {
     public class vThirdPersonController : vThirdPersonAnimator
     {
-        public virtual void MySlash()
+        public  void MySlash()
         {
             Debug.Log("Slash!");
+           
+            
+                animator.CrossFadeInFixedTime("Slash", 0.1f);
+             
+            
+        }
+
+        public void enableSlash()
+        {
+            isSlashing = false;
         }
         
         public virtual void ControlAnimatorRootMotion()
