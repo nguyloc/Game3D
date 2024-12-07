@@ -32,12 +32,6 @@ public class PetController : MonoBehaviour
         {
             AttackEnemy();
         }
-        
-        // Giữ trạng thái animation "bay tại chỗ" nếu không làm gì
-        if (animator != null && !animator.GetCurrentAnimatorStateInfo(0).IsName("Attack") && currentTarget == null)
-        {
-            animator.SetBool("isFlyingFast", false); // Animation bay tại chỗ
-        }
     }
 
     void FollowPlayer()
@@ -87,7 +81,6 @@ public class PetController : MonoBehaviour
         if (Time.time > lastAttackTime + attackCooldown)
         {
             animator.SetTrigger("Attack"); // Animation tấn công
-            ShootFireball(); // Bắn đạn
             lastAttackTime = Time.time; // Cập nhật thời gian tấn công
         }
     }
