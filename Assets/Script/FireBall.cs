@@ -3,7 +3,7 @@ using UnityEngine;
 public class Fireball : MonoBehaviour
 {
     public int damage = 10; // Sát thương của đạn
-    public float lifeTime = 5f; // Thời gian sống của đạn
+    public float lifeTime = 2f; // Thời gian sống của đạn
 
     void Start()
     {
